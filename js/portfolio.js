@@ -1,45 +1,44 @@
 const projectImg = document.querySelectorAll(".project-img img")
 
         projectImg[0].addEventListener("click", function(){
+            // history.pushState({},'modal','/modal');
             const div = document.createElement("div");
             div.id = "root";
-            const content = `<h2 style="margin-top: 4rem;">Montage(영화 중심의 SNS)</h2>
+            const content = `<h2 style="margin-top: 4rem; white-space: nowrap">Montage(영화 중심의 SNS)</h2>
                         <br>
                         <div class="summary">
                                 <table style="border-spacing: 30px;">
                                     <tr >
-                                        <td class="pb-05rem">
-                                            <span>개발 기간 : </span>
-                                        </td>
-                                        <td class="pb-05rem">
+                                        <td colspan="2" class="pb-05rem">
                                             2022.01.07 ~ 2022.02.11
                                         </td>
                                     </tr>
                                     <tr >
                                         <td class="pb-05rem">
-                                            <span>팀원 : </span>
+                                            <span class="nowrap">팀원 : </span>
                                         </td>
                                         <td class="pb-05rem">
                                            5명
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pb-05rem">개발 목표 : </td>
+                                        <td class="pb-05rem nowrap">개발 목표 : </td>
                                         <td class="pb-05rem">
                                             영화에 관한 평점, 리뷰를 중심으로 영화에 대한 소통을 중심으로 한 SNS
                                         </td>
                                     </tr>
                                     <tr>
                                         <td  class="pb-05rem" style="width: 10%;">
-                                            <span >구현 기능 : </span>
+                                            <span  class="nowrap">구현 기능 : </span>
                                         </td>
                                         <td class="pb-05rem">
                                             <span> 이메일 인증 회원 가입, 회원 정보 수정, 게시글 CRUD, 영화 검색, 영화 리뷰 및 평점, 해시태그, 댓글 CRUD, 팔로우, 좋아요, 회원 간 메시지, 회원경고, 신고, 문의, 통계</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pb-05rem">개발환경 : </td>
-                                        <td><table>
+                                        <td class="pb-05rem" colspan="2">
+                                        개발환경 <br>
+                                        <table style="margin-left:1rem;">
                                             <tr>
                                                 <td>서버</td>
                                                 <td>apache-tomcat 8.5</td>
@@ -67,15 +66,14 @@ const projectImg = document.querySelectorAll(".project-img img")
                                         </table></td>
                                     </tr>
                                     <tr>
-                                        <td class="pb-05rem">담당 역할 : </td>
+                                        <td class="pb-05rem nowrap">담당 역할 : </td>
                                         <td class="pb-05rem">
                                             게시판 기능 담당 <br>
                                             게시글 CRUD, 댓글 CRUD, 무한스크롤, API를 통한 영화 검색, 좋아요, 해시태그, 검색, USECASE
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pb-05rem">Diagram : </td>
-                                        <td>
+                                        <td colspan="2" class="nowrap">
                                             ERD 논리
                                             <img class="light-img diagram-img" src="image/언더독 논리.png" alt="">
                                             ERD 물리
@@ -85,7 +83,7 @@ const projectImg = document.querySelectorAll(".project-img img")
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>참여 소감:</td>
+                                        <td class="nowrap">참여 소감:</td>
                                         <td>
                                             두 번째 프로젝트입니다.
                                             첫번째 프로젝트에서 경험한 깃 사용의 문제, 작업의 순서 등 문제점을 겪지 않고자 노력했습니다.
@@ -169,6 +167,7 @@ const projectImg = document.querySelectorAll(".project-img img")
         })
 
         projectImg[1].addEventListener("click", function(){
+            // history.pushState({},'modal','/modal');
             const div = document.createElement("div");
             div.id = "root";
             const content = `<h2 style="margin-top: 4rem;">Develog(개발자 블로그)</h2>
@@ -414,3 +413,7 @@ const projectImg = document.querySelectorAll(".project-img img")
                 document.getElementsByClassName("lightbox")[0].remove();
             }
         })
+
+// document.getElementsByClassName("btn-close")[0].addEventListener("click", function(){
+//     window.history.back()
+// })

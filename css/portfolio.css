@@ -23,6 +23,9 @@ body{
 .pb-05rem{
     padding-bottom:0.5rem;
 }
+.nowrap{
+    white-space: nowrap;
+}
 
 #root{
     max-width: 1024px;
@@ -166,6 +169,12 @@ td{
     width: 100%;
     height: 100%;
 }
+
+.btn-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
 @media (max-width: 425px){
     .flex-row1{
         flex-direction: column;
@@ -184,6 +193,10 @@ td{
         flex-wrap: wrap;
     }
 
+    .project-etc{
+        flex-direction: row !important;
+    }
+
     .project-info{
         padding-left: 0;
         width: 100%;
@@ -198,5 +211,10 @@ td{
     }
     .project-env span{
         margin-top: 1rem;
+    }
+
+    .lightbox img{
+        width: 100%;
+        padding: 0rem;
     }
 }
