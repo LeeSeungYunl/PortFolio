@@ -15,7 +15,7 @@ body{
     margin-left: 1rem;
 }
 
-.flex-row{
+.flex-row1{
     display: flex;
     flex-direction: row;
 }
@@ -165,4 +165,38 @@ td{
 .project-detail video{
     width: 100%;
     height: 100%;
+}
+@media (max-width: 425px){
+    .flex-row1{
+        flex-direction: column;
+    }
+    .project-content{
+        max-height: none;
+    }
+
+    .project-img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .project-env{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-info{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .skill-box{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .skill-content{
+        margin-top: 1rem;
+    }
+    .project-env span{
+        margin-top: 1rem;
+    }
 }
