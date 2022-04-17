@@ -325,7 +325,7 @@ const projectImg = document.querySelectorAll(".project-img img")
                                     </div>
                                     <div class="project-detail flex-row1">
                                         <div>
-                                            <img src="SemiImage/adminReply.png" style="width: 100%; height: 100%;">
+                                            <video src="SemiVideo/adminReply.mp4"muted controls></video>
                                         </div>
                                         <div>
                                             페이지 네이션 구현<br>
@@ -345,7 +345,7 @@ const projectImg = document.querySelectorAll(".project-img img")
                                     </div>
                                     <div class="project-detail flex-row1">
                                         <div>
-                                            <img src="SemiImage/adminReport.png" style="width: 100%; height: 100%;">
+                                            <video src="SemiVideo/adminReport.mp4" muted controls></video>
                                         </div>
                                         <div>
                                             페이지 네이션 구현<br>
